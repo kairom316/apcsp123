@@ -28,9 +28,11 @@ while (result != "correct") {
     } else if (result == "more") {
         game.splash("The answer is more! ", "You have used " + tries + " tries")
     }
-    if (tries >= 10) {
+    if (tries > 10) {
         game.splash("You lose!")
-        effects.confetti.endScreenEffect()
+        break;
     }
 }
-game.splash("You win!")
+if (tries <= 10) {
+    game.splash("You win!")
+}
