@@ -2,7 +2,8 @@
     "name": "APCSP123",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "lkjdf": "pub:98651-97297-28106-90103"
     },
     "files": [
         "main.blocks",
