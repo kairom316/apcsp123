@@ -7,8 +7,10 @@ function check (guess: number, answer: number) {
         return "less"
     }
 }
-let guess = game.askForNumber("What is your guess from 1 - 1000?", 4)
 let tries = 0
+// Sets the "guess" variable to the question "What is your guess from 1-1000?
+let guess = game.askForNumber("What is your guess from 1 - 1000?", 4)
+// Sets the "answer" variable to a random number between 0 and 1000.
 let answer = randint(0, 1000)
 let result = check(guess, answer)
 tries += 1
